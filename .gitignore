@@ -1,0 +1,23 @@
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+output/execution.log
+*.log
+
+# Local/IDE specific config
+.gemini/

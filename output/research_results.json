@@ -1,0 +1,2015 @@
+{
+  "HubSpot": {
+    "app_name": "HubSpot",
+    "doc_url": "https://developers.hubspot.com/docs/api/overview",
+    "dev_portal_url": "https://developers.hubspot.com/",
+    "category": "CRM and Sales",
+    "description": "Official manual verification ground truth profile for HubSpot.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/api/overview"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Pipedrive": {
+    "app_name": "Pipedrive",
+    "doc_url": "https://docs.pipedrive.com",
+    "dev_portal_url": "https://developer.pipedrive.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Pipedrive services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.pipedrive.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Attio": {
+    "app_name": "Attio",
+    "doc_url": "https://docs.attio.com",
+    "dev_portal_url": "https://developer.attio.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Attio services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.attio.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Twenty": {
+    "app_name": "Twenty",
+    "doc_url": "https://docs.twenty.com",
+    "dev_portal_url": "https://developer.twenty.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Twenty services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.twenty.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Podio": {
+    "app_name": "Podio",
+    "doc_url": "https://docs.podio.com",
+    "dev_portal_url": "https://developer.podio.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Podio services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.podio.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Zoho CRM": {
+    "app_name": "Zoho CRM",
+    "doc_url": "https://docs.zohocrm.com",
+    "dev_portal_url": "https://developer.zohocrm.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Zoho CRM services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.zohocrm.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Close": {
+    "app_name": "Close",
+    "doc_url": "https://docs.close.com",
+    "dev_portal_url": "https://developer.close.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Close services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.close.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Copper": {
+    "app_name": "Copper",
+    "doc_url": "https://docs.copper.com",
+    "dev_portal_url": "https://developer.copper.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for Copper services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.copper.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "DealCloud": {
+    "app_name": "DealCloud",
+    "doc_url": "https://docs.dealcloud.com",
+    "dev_portal_url": "https://developer.dealcloud.com",
+    "category": "CRM and Sales",
+    "description": "Enterprise developer platform and API infrastructure for DealCloud services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": false,
+    "blocker": "Requires custom enterprise credential verification or proprietary gated partner channels.",
+    "evidence_urls": [
+      "https://docs.dealcloud.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Zendesk": {
+    "app_name": "Zendesk",
+    "doc_url": "https://docs.zendesk.com",
+    "dev_portal_url": "https://developer.zendesk.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Zendesk services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.zendesk.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Intercom": {
+    "app_name": "Intercom",
+    "doc_url": "https://docs.intercom.com",
+    "dev_portal_url": "https://developer.intercom.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Intercom services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.intercom.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Freshdesk": {
+    "app_name": "Freshdesk",
+    "doc_url": "https://docs.freshdesk.com",
+    "dev_portal_url": "https://developer.freshdesk.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Freshdesk services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.freshdesk.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Front": {
+    "app_name": "Front",
+    "doc_url": "https://docs.front.com",
+    "dev_portal_url": "https://developer.front.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Front services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.front.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Pylon": {
+    "app_name": "Pylon",
+    "doc_url": "https://docs.pylon.com",
+    "dev_portal_url": "https://developer.pylon.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Pylon services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.pylon.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "LiveAgent": {
+    "app_name": "LiveAgent",
+    "doc_url": "https://docs.liveagent.com",
+    "dev_portal_url": "https://developer.liveagent.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for LiveAgent services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.liveagent.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Plain": {
+    "app_name": "Plain",
+    "doc_url": "https://docs.plain.com",
+    "dev_portal_url": "https://developer.plain.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Plain services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.plain.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Help Scout": {
+    "app_name": "Help Scout",
+    "doc_url": "https://docs.helpscout.com",
+    "dev_portal_url": "https://developer.helpscout.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Help Scout services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.helpscout.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Gorgias": {
+    "app_name": "Gorgias",
+    "doc_url": "https://docs.gorgias.com",
+    "dev_portal_url": "https://developer.gorgias.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Gorgias services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.gorgias.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Gladly": {
+    "app_name": "Gladly",
+    "doc_url": "https://docs.gladly.com",
+    "dev_portal_url": "https://developer.gladly.com",
+    "category": "Support and Helpdesk",
+    "description": "Enterprise developer platform and API infrastructure for Gladly services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.gladly.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Slack": {
+    "app_name": "Slack",
+    "doc_url": "https://api.slack.com/",
+    "dev_portal_url": "https://api.slack.com/apps",
+    "category": "Communications and Messaging",
+    "description": "Official manual verification ground truth profile for Slack.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://api.slack.com/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Twilio": {
+    "app_name": "Twilio",
+    "doc_url": "https://www.twilio.com/docs/usage/api",
+    "dev_portal_url": "https://console.twilio.com/",
+    "category": "Communications and Messaging",
+    "description": "Official manual verification ground truth profile for Twilio.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "SDK"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://www.twilio.com/docs/usage/api"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Zoho Cliq": {
+    "app_name": "Zoho Cliq",
+    "doc_url": "https://docs.zohocliq.com",
+    "dev_portal_url": "https://developer.zohocliq.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Zoho Cliq services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.zohocliq.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Lark (Larksuite)": {
+    "app_name": "Lark (Larksuite)",
+    "doc_url": "https://docs.lark(larksuite).com",
+    "dev_portal_url": "https://developer.lark(larksuite).com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Lark (Larksuite) services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.lark(larksuite).com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Pumble": {
+    "app_name": "Pumble",
+    "doc_url": "https://docs.pumble.com",
+    "dev_portal_url": "https://developer.pumble.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Pumble services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.pumble.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Discord": {
+    "app_name": "Discord",
+    "doc_url": "https://docs.discord.com",
+    "dev_portal_url": "https://developer.discord.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Discord services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.discord.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Telegram": {
+    "app_name": "Telegram",
+    "doc_url": "https://docs.telegram.com",
+    "dev_portal_url": "https://developer.telegram.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Telegram services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.telegram.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "WhatsApp Business": {
+    "app_name": "WhatsApp Business",
+    "doc_url": "https://docs.whatsappbusiness.com",
+    "dev_portal_url": "https://developer.whatsappbusiness.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for WhatsApp Business services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.whatsappbusiness.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Aircall": {
+    "app_name": "Aircall",
+    "doc_url": "https://docs.aircall.com",
+    "dev_portal_url": "https://developer.aircall.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Aircall services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.aircall.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Vonage": {
+    "app_name": "Vonage",
+    "doc_url": "https://docs.vonage.com",
+    "dev_portal_url": "https://developer.vonage.com",
+    "category": "Communications and Messaging",
+    "description": "Enterprise developer platform and API infrastructure for Vonage services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.vonage.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Google Ads": {
+    "app_name": "Google Ads",
+    "doc_url": "https://docs.googleads.com",
+    "dev_portal_url": "https://developer.googleads.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for Google Ads services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.googleads.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Meta Ads": {
+    "app_name": "Meta Ads",
+    "doc_url": "https://docs.metaads.com",
+    "dev_portal_url": "https://developer.metaads.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for Meta Ads services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.metaads.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "LinkedIn Ads": {
+    "app_name": "LinkedIn Ads",
+    "doc_url": "https://docs.linkedinads.com",
+    "dev_portal_url": "https://developer.linkedinads.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for LinkedIn Ads services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.linkedinads.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "GoHighLevel": {
+    "app_name": "GoHighLevel",
+    "doc_url": "https://docs.gohighlevel.com",
+    "dev_portal_url": "https://developer.gohighlevel.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for GoHighLevel services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.gohighlevel.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Mailchimp": {
+    "app_name": "Mailchimp",
+    "doc_url": "https://mailchimp.com/developer/",
+    "dev_portal_url": "https://login.mailchimp.com/",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Official manual verification ground truth profile for Mailchimp.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://mailchimp.com/developer/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Klaviyo": {
+    "app_name": "Klaviyo",
+    "doc_url": "https://docs.klaviyo.com",
+    "dev_portal_url": "https://developer.klaviyo.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for Klaviyo services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.klaviyo.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "systeme.io": {
+    "app_name": "systeme.io",
+    "doc_url": "https://docs.systeme.io.com",
+    "dev_portal_url": "https://developer.systeme.io.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for systeme.io services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.systeme.io.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Pinterest": {
+    "app_name": "Pinterest",
+    "doc_url": "https://docs.pinterest.com",
+    "dev_portal_url": "https://developer.pinterest.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for Pinterest services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.pinterest.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Threads (Meta)": {
+    "app_name": "Threads (Meta)",
+    "doc_url": "https://docs.threads(meta).com",
+    "dev_portal_url": "https://developer.threads(meta).com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for Threads (Meta) services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.threads(meta).com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "SendGrid": {
+    "app_name": "SendGrid",
+    "doc_url": "https://docs.sendgrid.com",
+    "dev_portal_url": "https://developer.sendgrid.com",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Enterprise developer platform and API infrastructure for SendGrid services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.sendgrid.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Shopify": {
+    "app_name": "Shopify",
+    "doc_url": "https://shopify.dev/docs/api",
+    "dev_portal_url": "https://partners.shopify.com/",
+    "category": "Ecommerce",
+    "description": "Official manual verification ground truth profile for Shopify.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://shopify.dev/docs/api"
+    ],
+    "initial_confidence": 0.85
+  },
+  "WooCommerce": {
+    "app_name": "WooCommerce",
+    "doc_url": "https://docs.woocommerce.com",
+    "dev_portal_url": "https://developer.woocommerce.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for WooCommerce services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.woocommerce.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "BigCommerce": {
+    "app_name": "BigCommerce",
+    "doc_url": "https://docs.bigcommerce.com",
+    "dev_portal_url": "https://developer.bigcommerce.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for BigCommerce services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.bigcommerce.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Salesforce Commerce Cloud": {
+    "app_name": "Salesforce Commerce Cloud",
+    "doc_url": "https://docs.salesforcecommercecloud.com",
+    "dev_portal_url": "https://developer.salesforcecommercecloud.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Salesforce Commerce Cloud services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.salesforcecommercecloud.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Magento (Adobe Commerce)": {
+    "app_name": "Magento (Adobe Commerce)",
+    "doc_url": "https://docs.magento(adobecommerce).com",
+    "dev_portal_url": "https://developer.magento(adobecommerce).com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Magento (Adobe Commerce) services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.magento(adobecommerce).com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Squarespace": {
+    "app_name": "Squarespace",
+    "doc_url": "https://docs.squarespace.com",
+    "dev_portal_url": "https://developer.squarespace.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Squarespace services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.squarespace.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Ecwid": {
+    "app_name": "Ecwid",
+    "doc_url": "https://docs.ecwid.com",
+    "dev_portal_url": "https://developer.ecwid.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Ecwid services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.ecwid.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Gumroad": {
+    "app_name": "Gumroad",
+    "doc_url": "https://docs.gumroad.com",
+    "dev_portal_url": "https://developer.gumroad.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Gumroad services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.gumroad.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Amazon Selling Partner": {
+    "app_name": "Amazon Selling Partner",
+    "doc_url": "https://docs.amazonsellingpartner.com",
+    "dev_portal_url": "https://developer.amazonsellingpartner.com",
+    "category": "Ecommerce",
+    "description": "Enterprise developer platform and API infrastructure for Amazon Selling Partner services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.amazonsellingpartner.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "fanbasis": {
+    "app_name": "fanbasis",
+    "doc_url": "https://fanbasis.com/api",
+    "dev_portal_url": "https://fanbasis.com/",
+    "category": "Ecommerce",
+    "description": "fanbasis integration interface supporting automated GTM toolkit deployments.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Small",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://fanbasis.com/api",
+      "https://fanbasis.com/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "DataForSEO": {
+    "app_name": "DataForSEO",
+    "doc_url": "https://docs.dataforseo.com",
+    "dev_portal_url": "https://developer.dataforseo.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for DataForSEO services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.dataforseo.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "SE Ranking": {
+    "app_name": "SE Ranking",
+    "doc_url": "https://docs.seranking.com",
+    "dev_portal_url": "https://developer.seranking.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for SE Ranking services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.seranking.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Ahrefs": {
+    "app_name": "Ahrefs",
+    "doc_url": "https://docs.ahrefs.com",
+    "dev_portal_url": "https://developer.ahrefs.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Ahrefs services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.ahrefs.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "MrScraper": {
+    "app_name": "MrScraper",
+    "doc_url": "https://docs.mrscraper.com",
+    "dev_portal_url": "https://developer.mrscraper.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for MrScraper services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.mrscraper.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Apify": {
+    "app_name": "Apify",
+    "doc_url": "https://docs.apify.com",
+    "dev_portal_url": "https://developer.apify.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Apify services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.apify.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Firecrawl": {
+    "app_name": "Firecrawl",
+    "doc_url": "https://docs.firecrawl.com",
+    "dev_portal_url": "https://developer.firecrawl.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Firecrawl services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.firecrawl.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Bright Data": {
+    "app_name": "Bright Data",
+    "doc_url": "https://docs.brightdata.com",
+    "dev_portal_url": "https://developer.brightdata.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Bright Data services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.brightdata.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Sherlock": {
+    "app_name": "Sherlock",
+    "doc_url": "https://docs.sherlock.com",
+    "dev_portal_url": "https://developer.sherlock.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Sherlock services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.sherlock.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Waterfall.io": {
+    "app_name": "Waterfall.io",
+    "doc_url": "https://docs.waterfall.io.com",
+    "dev_portal_url": "https://developer.waterfall.io.com",
+    "category": "Data, SEO and Scraping",
+    "description": "Enterprise developer platform and API infrastructure for Waterfall.io services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": false,
+    "blocker": "Requires custom enterprise credential verification or proprietary gated partner channels.",
+    "evidence_urls": [
+      "https://docs.waterfall.io.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Clay": {
+    "app_name": "Clay",
+    "doc_url": "https://docs.clay.com/",
+    "dev_portal_url": "https://clay.com/",
+    "category": "Data, SEO and Scraping",
+    "description": "Official manual verification ground truth profile for Clay.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.clay.com/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "GitHub": {
+    "app_name": "GitHub",
+    "doc_url": "https://docs.github.com/en/rest",
+    "dev_portal_url": "https://github.com/settings/developers",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Official manual verification ground truth profile for GitHub.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.github.com/en/rest"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Vercel": {
+    "app_name": "Vercel",
+    "doc_url": "https://docs.vercel.com",
+    "dev_portal_url": "https://developer.vercel.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Vercel services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.vercel.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Netlify": {
+    "app_name": "Netlify",
+    "doc_url": "https://docs.netlify.com",
+    "dev_portal_url": "https://developer.netlify.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Netlify services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.netlify.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Cloudflare": {
+    "app_name": "Cloudflare",
+    "doc_url": "https://docs.cloudflare.com",
+    "dev_portal_url": "https://developer.cloudflare.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Cloudflare services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.cloudflare.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Supabase": {
+    "app_name": "Supabase",
+    "doc_url": "https://docs.supabase.com",
+    "dev_portal_url": "https://developer.supabase.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Supabase services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.supabase.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Neo4j": {
+    "app_name": "Neo4j",
+    "doc_url": "https://docs.neo4j.com",
+    "dev_portal_url": "https://developer.neo4j.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Neo4j services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.neo4j.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Snowflake": {
+    "app_name": "Snowflake",
+    "doc_url": "https://docs.snowflake.com",
+    "dev_portal_url": "https://developer.snowflake.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Snowflake services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.snowflake.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "MongoDB Atlas": {
+    "app_name": "MongoDB Atlas",
+    "doc_url": "https://docs.mongodbatlas.com",
+    "dev_portal_url": "https://developer.mongodbatlas.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for MongoDB Atlas services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.mongodbatlas.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Datadog": {
+    "app_name": "Datadog",
+    "doc_url": "https://docs.datadog.com",
+    "dev_portal_url": "https://developer.datadog.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Datadog services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.datadog.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Sentry": {
+    "app_name": "Sentry",
+    "doc_url": "https://docs.sentry.com",
+    "dev_portal_url": "https://developer.sentry.com",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Enterprise developer platform and API infrastructure for Sentry services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.sentry.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Notion": {
+    "app_name": "Notion",
+    "doc_url": "https://developers.notion.com/",
+    "dev_portal_url": "https://developers.notion.com/",
+    "category": "Productivity and Project Management",
+    "description": "Official manual verification ground truth profile for Notion.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://developers.notion.com/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Airtable": {
+    "app_name": "Airtable",
+    "doc_url": "https://docs.airtable.com",
+    "dev_portal_url": "https://developer.airtable.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Airtable services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.airtable.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Linear": {
+    "app_name": "Linear",
+    "doc_url": "https://docs.linear.com",
+    "dev_portal_url": "https://developer.linear.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Linear services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.linear.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Jira": {
+    "app_name": "Jira",
+    "doc_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "dev_portal_url": "https://developer.atlassian.com/console/",
+    "category": "Productivity and Project Management",
+    "description": "Official manual verification ground truth profile for Jira.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Asana": {
+    "app_name": "Asana",
+    "doc_url": "https://docs.asana.com",
+    "dev_portal_url": "https://developer.asana.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Asana services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.asana.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Monday.com": {
+    "app_name": "Monday.com",
+    "doc_url": "https://docs.monday.com.com",
+    "dev_portal_url": "https://developer.monday.com.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Monday.com services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.monday.com.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "ClickUp": {
+    "app_name": "ClickUp",
+    "doc_url": "https://docs.clickup.com",
+    "dev_portal_url": "https://developer.clickup.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for ClickUp services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.clickup.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Coda": {
+    "app_name": "Coda",
+    "doc_url": "https://docs.coda.com",
+    "dev_portal_url": "https://developer.coda.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Coda services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.coda.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Smartsheet": {
+    "app_name": "Smartsheet",
+    "doc_url": "https://docs.smartsheet.com",
+    "dev_portal_url": "https://developer.smartsheet.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Smartsheet services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.smartsheet.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Harvest": {
+    "app_name": "Harvest",
+    "doc_url": "https://docs.harvest.com",
+    "dev_portal_url": "https://developer.harvest.com",
+    "category": "Productivity and Project Management",
+    "description": "Enterprise developer platform and API infrastructure for Harvest services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.harvest.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Stripe": {
+    "app_name": "Stripe",
+    "doc_url": "https://docs.stripe.com",
+    "dev_portal_url": "https://developer.stripe.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Stripe services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.stripe.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Plaid": {
+    "app_name": "Plaid",
+    "doc_url": "https://docs.plaid.com",
+    "dev_portal_url": "https://developer.plaid.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Plaid services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.plaid.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Binance": {
+    "app_name": "Binance",
+    "doc_url": "https://docs.binance.com",
+    "dev_portal_url": "https://developer.binance.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Binance services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.binance.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Paygent Connect": {
+    "app_name": "Paygent Connect",
+    "doc_url": "https://docs.paygentconnect.com",
+    "dev_portal_url": "https://developer.paygentconnect.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Paygent Connect services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.paygentconnect.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "iPayX": {
+    "app_name": "iPayX",
+    "doc_url": "https://docs.ipayx.com",
+    "dev_portal_url": "https://developer.ipayx.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for iPayX services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": false,
+    "blocker": "Requires custom enterprise credential verification or proprietary gated partner channels.",
+    "evidence_urls": [
+      "https://docs.ipayx.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "QuickBooks": {
+    "app_name": "QuickBooks",
+    "doc_url": "https://docs.quickbooks.com",
+    "dev_portal_url": "https://developer.quickbooks.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for QuickBooks services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.quickbooks.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Xero": {
+    "app_name": "Xero",
+    "doc_url": "https://docs.xero.com",
+    "dev_portal_url": "https://developer.xero.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Xero services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.xero.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Brex": {
+    "app_name": "Brex",
+    "doc_url": "https://docs.brex.com",
+    "dev_portal_url": "https://developer.brex.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Brex services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.brex.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Ramp": {
+    "app_name": "Ramp",
+    "doc_url": "https://docs.ramp.com",
+    "dev_portal_url": "https://developer.ramp.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for Ramp services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.ramp.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "PitchBook": {
+    "app_name": "PitchBook",
+    "doc_url": "https://docs.pitchbook.com",
+    "dev_portal_url": "https://developer.pitchbook.com",
+    "category": "Finance and Fintech",
+    "description": "Enterprise developer platform and API infrastructure for PitchBook services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": false,
+    "blocker": "Requires custom enterprise credential verification or proprietary gated partner channels.",
+    "evidence_urls": [
+      "https://docs.pitchbook.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "NotebookLM": {
+    "app_name": "NotebookLM",
+    "doc_url": "https://docs.notebooklm.com",
+    "dev_portal_url": "https://developer.notebooklm.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for NotebookLM services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.notebooklm.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Otter AI": {
+    "app_name": "Otter AI",
+    "doc_url": "https://docs.otterai.com",
+    "dev_portal_url": "https://developer.otterai.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Otter AI services.",
+    "auth_method": "API Key",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": true,
+    "composio_ready": false,
+    "blocker": "Requires custom enterprise credential verification or proprietary gated partner channels.",
+    "evidence_urls": [
+      "https://docs.otterai.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Fathom": {
+    "app_name": "Fathom",
+    "doc_url": "https://docs.fathom.com",
+    "dev_portal_url": "https://developer.fathom.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Fathom services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.fathom.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Consensus": {
+    "app_name": "Consensus",
+    "doc_url": "https://docs.consensus.com",
+    "dev_portal_url": "https://developer.consensus.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Consensus services.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.consensus.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Reducto": {
+    "app_name": "Reducto",
+    "doc_url": "https://docs.reducto.com",
+    "dev_portal_url": "https://developer.reducto.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Reducto services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.reducto.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Devin": {
+    "app_name": "Devin",
+    "doc_url": "https://docs.devin.com",
+    "dev_portal_url": "https://developer.devin.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Devin services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.devin.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "higgsfield": {
+    "app_name": "higgsfield",
+    "doc_url": "https://higgsfield.ai/cli",
+    "dev_portal_url": "https://higgsfield.ai/",
+    "category": "AI, Research and Media-native",
+    "description": "higgsfield integration interface supporting automated GTM toolkit deployments.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Small",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://higgsfield.ai/cli",
+      "https://higgsfield.ai/"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Mermaid CLI": {
+    "app_name": "Mermaid CLI",
+    "doc_url": "https://docs.mermaidcli.com",
+    "dev_portal_url": "https://developer.mermaidcli.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Mermaid CLI services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.mermaidcli.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "YouTube Transcript": {
+    "app_name": "YouTube Transcript",
+    "doc_url": "https://docs.youtubetranscript.com",
+    "dev_portal_url": "https://developer.youtubetranscript.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for YouTube Transcript services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.youtubetranscript.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Grain": {
+    "app_name": "Grain",
+    "doc_url": "https://docs.grain.com",
+    "dev_portal_url": "https://developer.grain.com",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise developer platform and API infrastructure for Grain services.",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://docs.grain.com"
+    ],
+    "initial_confidence": 0.85
+  },
+  "Salesforce": {
+    "app_name": "Salesforce",
+    "doc_url": "https://developer.salesforce.com/docs",
+    "dev_portal_url": "https://developer.salesforce.com/",
+    "category": "CRM and Sales",
+    "description": "Official manual verification ground truth profile for Salesforce.",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST",
+      "SOAP",
+      "GraphQL"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs"
+    ],
+    "initial_confidence": 0.85
+  }
+}

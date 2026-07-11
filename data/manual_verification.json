@@ -1,0 +1,173 @@
+[
+  {
+    "category": "CRM and Sales",
+    "auth_method": "OAuth2",
+    "dev_access": "Gated",
+    "api_type": [
+      "REST",
+      "SOAP",
+      "GraphQL"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://developer.salesforce.com/docs",
+    "dev_portal_url": "https://developer.salesforce.com/",
+    "app_name": "Salesforce",
+    "description": "Official manual verification ground truth profile for Salesforce."
+  },
+  {
+    "category": "CRM and Sales",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://developers.hubspot.com/docs/api/overview",
+    "dev_portal_url": "https://developers.hubspot.com/",
+    "app_name": "HubSpot",
+    "description": "Official manual verification ground truth profile for HubSpot."
+  },
+  {
+    "category": "Communications and Messaging",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://api.slack.com/",
+    "dev_portal_url": "https://api.slack.com/apps",
+    "app_name": "Slack",
+    "description": "Official manual verification ground truth profile for Slack."
+  },
+  {
+    "category": "Communications and Messaging",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "SDK"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://www.twilio.com/docs/usage/api",
+    "dev_portal_url": "https://console.twilio.com/",
+    "app_name": "Twilio",
+    "description": "Official manual verification ground truth profile for Twilio."
+  },
+  {
+    "category": "Marketing, Ads, Email and Social",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://mailchimp.com/developer/",
+    "dev_portal_url": "https://login.mailchimp.com/",
+    "app_name": "Mailchimp",
+    "description": "Official manual verification ground truth profile for Mailchimp."
+  },
+  {
+    "category": "Ecommerce",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://shopify.dev/docs/api",
+    "dev_portal_url": "https://partners.shopify.com/",
+    "app_name": "Shopify",
+    "description": "Official manual verification ground truth profile for Shopify."
+  },
+  {
+    "category": "Data, SEO and Scraping",
+    "auth_method": "API Key",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://docs.clay.com/",
+    "dev_portal_url": "https://clay.com/",
+    "app_name": "Clay",
+    "description": "Official manual verification ground truth profile for Clay."
+  },
+  {
+    "category": "Developer, Infra and Data platforms",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://docs.github.com/en/rest",
+    "dev_portal_url": "https://github.com/settings/developers",
+    "app_name": "GitHub",
+    "description": "Official manual verification ground truth profile for GitHub."
+  },
+  {
+    "category": "Productivity and Project Management",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST"
+    ],
+    "api_coverage": "Medium",
+    "mcp_server_exists": false,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://developers.notion.com/",
+    "dev_portal_url": "https://developers.notion.com/",
+    "app_name": "Notion",
+    "description": "Official manual verification ground truth profile for Notion."
+  },
+  {
+    "category": "Productivity and Project Management",
+    "auth_method": "OAuth2",
+    "dev_access": "Self Serve",
+    "api_type": [
+      "REST",
+      "Webhooks"
+    ],
+    "api_coverage": "Broad",
+    "mcp_server_exists": true,
+    "composio_ready": true,
+    "blocker": null,
+    "doc_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "dev_portal_url": "https://developer.atlassian.com/console/",
+    "app_name": "Jira",
+    "description": "Official manual verification ground truth profile for Jira."
+  }
+]

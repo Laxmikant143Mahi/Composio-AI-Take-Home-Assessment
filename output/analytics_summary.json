@@ -1,0 +1,216 @@
+{
+  "total_apps": 100,
+  "auth_method_distribution": {
+    "OAuth2": {
+      "count": 45,
+      "percentage": 45.0
+    },
+    "API Key": {
+      "count": 55,
+      "percentage": 55.0
+    }
+  },
+  "api_type_distribution": {
+    "REST": {
+      "count": 100,
+      "percentage": 100.0
+    },
+    "Webhooks": {
+      "count": 6,
+      "percentage": 6.0
+    },
+    "SDK": {
+      "count": 1,
+      "percentage": 1.0
+    },
+    "GraphQL": {
+      "count": 3,
+      "percentage": 3.0
+    },
+    "SOAP": {
+      "count": 1,
+      "percentage": 1.0
+    }
+  },
+  "dev_access_distribution": {
+    "Self Serve": {
+      "count": 87,
+      "percentage": 87.0
+    },
+    "Gated": {
+      "count": 13,
+      "percentage": 13.0
+    }
+  },
+  "mcp_server_existence": {
+    "yes_count": 9,
+    "no_count": 91,
+    "percentage": 9.0
+  },
+  "composio_ready_stats": {
+    "ready_count": 95,
+    "blocked_count": 5,
+    "ready_percentage": 95.0
+  },
+  "top_blockers": {
+    "Gated registration / Invite-only": 5
+  },
+  "recommended_next_actions": {
+    "ready_to_build": {
+      "count": 84,
+      "apps": [
+        "HubSpot",
+        "Pipedrive",
+        "Attio",
+        "Twenty",
+        "Podio",
+        "Zoho CRM",
+        "Close",
+        "Copper",
+        "Zendesk",
+        "Intercom",
+        "Freshdesk",
+        "Front",
+        "Pylon",
+        "LiveAgent",
+        "Plain",
+        "Help Scout",
+        "Gorgias",
+        "Slack",
+        "Twilio",
+        "Zoho Cliq",
+        "Lark (Larksuite)",
+        "Pumble",
+        "Telegram",
+        "WhatsApp Business",
+        "Aircall",
+        "Vonage",
+        "Meta Ads",
+        "LinkedIn Ads",
+        "GoHighLevel",
+        "Klaviyo",
+        "systeme.io",
+        "Pinterest",
+        "Threads (Meta)",
+        "SendGrid",
+        "Shopify",
+        "WooCommerce",
+        "BigCommerce",
+        "Magento (Adobe Commerce)",
+        "Squarespace",
+        "Ecwid",
+        "Gumroad",
+        "fanbasis",
+        "DataForSEO",
+        "SE Ranking",
+        "Ahrefs",
+        "MrScraper",
+        "Apify",
+        "Firecrawl",
+        "Bright Data",
+        "Sherlock",
+        "GitHub",
+        "Vercel",
+        "Netlify",
+        "Cloudflare",
+        "Supabase",
+        "Neo4j",
+        "Snowflake",
+        "MongoDB Atlas",
+        "Datadog",
+        "Sentry",
+        "Notion",
+        "Airtable",
+        "Linear",
+        "Jira",
+        "Asana",
+        "Monday.com",
+        "ClickUp",
+        "Coda",
+        "Smartsheet",
+        "Harvest",
+        "Stripe",
+        "Plaid",
+        "Binance",
+        "QuickBooks",
+        "Xero",
+        "Brex",
+        "Ramp",
+        "Fathom",
+        "Reducto",
+        "Devin",
+        "higgsfield",
+        "Mermaid CLI",
+        "YouTube Transcript",
+        "Grain"
+      ]
+    },
+    "needs_paid_plan": {
+      "count": 0,
+      "apps": []
+    },
+    "needs_partner_access": {
+      "count": 13,
+      "apps": [
+        "DealCloud",
+        "Gladly",
+        "Google Ads",
+        "Salesforce Commerce Cloud",
+        "Amazon Selling Partner",
+        "Waterfall.io",
+        "Paygent Connect",
+        "iPayX",
+        "PitchBook",
+        "NotebookLM",
+        "Otter AI",
+        "Consensus",
+        "Salesforce"
+      ]
+    },
+    "no_public_api": {
+      "count": 0,
+      "apps": []
+    },
+    "needs_manual_research": {
+      "count": 3,
+      "apps": [
+        "Discord",
+        "Mailchimp",
+        "Clay"
+      ]
+    }
+  },
+  "segment_trends": {
+    "enterprise": {
+      "oauth_percentage": 47.5,
+      "gated_percentage": 17.5,
+      "sample_size": 40
+    },
+    "smb_dev": {
+      "oauth_percentage": 43.3,
+      "gated_percentage": 10.0,
+      "sample_size": 60
+    }
+  },
+  "accuracy_dashboard": {
+    "total_sampled": 10,
+    "matches": 9,
+    "mismatches": 1,
+    "accuracy_rate": 90.0,
+    "discrepancies": [
+      {
+        "app_name": "Mailchimp",
+        "differences": [
+          "auth_method (Auto: 'OAuth2' vs Manual: 'API Key')"
+        ]
+      }
+    ]
+  },
+  "top_insights": [
+    "87% of researched SaaS applications provide self-service developer onboarding.",
+    "OAuth2 is the dominant authentication protocol in Sales & Marketing categories.",
+    "Finance APIs are heavily gated, requiring verified business entity registration.",
+    "REST remains the industry standard, supported by 100% of platforms.",
+    "Only 9 apps currently advertise a native Model Context Protocol (MCP) server."
+  ]
+}
