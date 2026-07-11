@@ -12,31 +12,96 @@ This platform automates that assessment. Given a list of 100 SaaS applications, 
 
 ---
 
-## 2. Platform Architecture & Modules
+## 2. High-Level Design (HLD)
 
-The platform is designed around four simple, highly focused modules:
+The platform is constructed as a decoupled, local-first hybrid data pipeline that automates the ingestion, crawling, analysis, and validation of developer documentation. 
 
-1.  **Research Agent (`src/agents/research.py`)**:
-    *   Finds developer documentation endpoints via an abstract **Documentation Discovery Layer** powered by the **Composio Python SDK** (utilizing Tavily Search tools, with a native fallback to DuckDuckGo Search).
-    *   Scrapes text content using `requests` + `BeautifulSoup` (with `Playwright` headless rendering fallback).
-    *   Invokes OpenAI's Structured Outputs API (`gpt-4o-mini`) to extract detailed schemas conforming to the `SaaSResearchModel` Pydantic class.
-2.  **Verification Agent (`src/agents/verification.py`)**:
-    *   Pings extracted URLs to verify network reachability (`200 OK`).
-    *   Performs an LLM-based semantic check comparing scraped page text directly against research findings, classifying evidence as `Supported`, `Unsupported`, or `Uncertain`.
-    *   Computes a deterministic, explainable confidence score.
-    *   Routes applications with confidence scores below `0.75` to the **Human Review Queue**.
-3.  **Analytics Engine (`src/services/analytics.py`)**:
-    *   Aggregates metrics (auth methods, API formats, onboarding structures).
-    *   Segments SaaS platforms into actionable integration statuses (Ready to Build vs. Needs Paid Plan vs. Needs Partner Access).
-    *   Examines security/onboarding trend differences between Enterprise-oriented vs. SMB-oriented SaaS.
-    *   Compares findings against ground truth data (`data/manual_verification.json`) to calculate dynamic validation metrics (Match/Mismatch and final accuracy rates).
-4.  **HTML Report Generator (`src/services/report_generator.py` & `src/templates/report.html.j2`)**:
-    *   Generates a premium glassmorphic single-page static HTML dashboard.
-    *   Embeds interactive client-side charts via Chart.js and answers the 5 core assessment questions in under two minutes.
+### System Topology & Data Flow
+The system processes applications through a sequential flow, utilizing a local cache layer to protect API limits while preserving the live crawling capability.
+
+```mermaid
+graph TD
+    A[data/saas_input.csv] -->|1. Ingestion| B[run.py Pipeline CLI]
+    B -->|2. Delegate Research| C[Research Agent]
+    C -->|3a. Check Cache| D[(data/research_cache.json)]
+    C -->|3b. Live Search Miss| E[Composio SDK / Tavily]
+    C -->|3c. Parse Page text| F[OpenAI API gpt-4o-mini]
+    
+    B -->|4. Delegate Verification| G[Verification Agent]
+    G -->|5a. URL Reachability check| H[Web Scraper Pings]
+    G -->|5b. Semantic Audit check| F
+    
+    B -->|6. Compile Aggregations| I[Analytics Engine]
+    I -->|Compare Ground Truth| J[data/manual_verification.json]
+    
+    B -->|7. Render templates| K[Report Generator]
+    K -->|8. Generate Dashboard| L[output/report.html]
+    K -->|9. Export Homepage| M[index.html at root]
+```
 
 ---
 
-## 3. How It Works (Workflow)
+## 3. Low-Level Design (LLD)
+
+The platform splits the business logic into distinct layers to maintain strict modularity:
+
+### Class Architecture & UML-style Schema
+The primary classes are typed via Pydantic v2 to ensure schema compliance before any JSON writes occur.
+
+```mermaid
+classDiagram
+    class ResearchAgent {
+        +composio_client: Composio
+        +composio_tools: list
+        +composio_user_id: str
+        +research_app(app_name: str) SaaSResearchModel
+        -_execute_research(app_name: str) SaaSResearchModel
+    }
+    class VerificationAgent {
+        +scraper: WebScraper
+        +manual_truth: list
+        +client: OpenAI
+        +verify_findings(research_data: SaaSResearchModel) SaaSVerifiedModel
+        -_llm_verify_evidence(research_data: SaaSResearchModel, url: str, text: str) tuple
+    }
+    class WebScraper {
+        +session: Session
+        +playwright_browser: Browser
+        +search_documentation(app_name: str, query_type: str) list
+        +fetch_page_content(url: str) str
+        +ping_url(url: str) int
+    }
+    class AnalyticsEngine {
+        +manual_truth: list
+        +generate_analytics(items: list) dict
+    }
+    
+    ResearchAgent --> WebScraper : Uses for fetches
+    VerificationAgent --> WebScraper : Uses for pings
+    VerificationAgent ..> SaaSResearchModel : Inspects
+    VerificationAgent ..> SaaSVerifiedModel : Produces
+```
+
+### Module Breakdown
+1.  **Ingestion & State Manager (`run.py`)**: Responsible for loading input CSV files, managing incremental checkpoints (saving progress after every application), and building final service engines.
+2.  **Research Agent (`src/agents/research.py`)**:
+    *   **Documentation Discovery Layer**: Invokes the **Composio SDK** to fetch Tavily Search tool metadata, resolving URL searches. If the SDK is not configured, it falls back to DuckDuckGo search.
+    *   **JSON Schema Extraction**: Directs `gpt-4o-mini` using the OpenAI Structured Outputs parser to strictly enforce validation constraints on the `SaaSResearchModel` class.
+3.  **Verification Agent (`src/agents/verification.py`)**:
+    *   **Status Check Engine**: Directly triggers network pings against extracted target domains. 
+    *   **Confidence Calculator**: Employs a deterministic heuristic formula (weighed between HTTP status codes and LLM evidence validations) to assess correctness.
+    *   **Human Router**: Sets `needs_human_review = True` for any application falling below the `0.75` score threshold.
+4.  **Low-Level Web Scraper (`src/scraper/web_scraper.py`)**:
+    *   **Requests session**: Manages network connections, cookie storage, and user-agent rotation.
+    *   **Playwright Engine**: A headless browser wrapper that launches in standard Chromium to render JavaScript-heavy Single Page Applications (SPAs) when requests return connection status codes `403` or Cloudflare locks.
+5.  **Analytics Service (`src/services/analytics.py`)**:
+    *   Aggregates auth mechanisms, category trends, onboarding accessibility distributions, and computes the dynamic verification accuracy score.
+6.  **Report Compiler (`src/services/report_generator.py`)**:
+    *   Uses Jinja2 to compile data models directly into a premium HTML5 webpage, injecting live Chart.js config data.
+
+---
+
+## 4. How It Works (Workflow)
 
 ```mermaid
 sequenceDiagram
@@ -72,7 +137,7 @@ sequenceDiagram
 
 ---
 
-## 4. Verification Strategy & Confidence Score
+## 5. Verification Strategy & Confidence Score
 
 To ensure data reliability, the Verification Agent calculates a deterministic confidence score:
 
@@ -92,7 +157,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ---
 
-## 5. Technology Stack
+## 6. Technology Stack
 
 *   **Core**: Python 3.13
 *   **Data Models**: Pydantic v2
@@ -103,7 +168,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ---
 
-## 6. Installation & Setup
+## 7. Installation & Setup
 
 1.  Clone the repository and navigate to the project directory:
     ```bash
@@ -127,7 +192,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ---
 
-## 7. How to Run
+## 8. How to Run
 
 1.  **Seed Datasets**:
     The input dataset of 100 applications (`data/saas_input.csv`) and verification ground truths (`data/manual_verification.json`) are already pre-seeded and packaged directly in this repository. No extra setup is required to prepare the dataset.
@@ -144,7 +209,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ---
 
-## 8. Design Decisions & Trade-Offs
+## 9. Design Decisions & Trade-Offs
 
 *   **Hybrid Development/Production Modes**: Running 100 live browser fetches and OpenAI API calls during a take-home assessment review is slow and costly. We built a zero-config local Development Mode (which executes when `OPENAI_API_KEY` is missing) that loads high-fidelity cached blueprints from our manual ground-truth databases instantly, while keeping the full live crawl extraction pathway (Production Mode) ready for active API keys.
 *   **No Event Bus or MQ**: The platform uses a clean, sequential Python CLI pipeline instead of heavy message queues (like Kafka or RabbitMQ) to prioritize simplicity and keep the code easily explainable by an intern during interviews.
@@ -152,7 +217,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ---
 
-## 9. Key Limitations & Human Intervention boundaries
+## 10. Key Limitations & Human Intervention boundaries
 
 1.  **Portals Behind Logins**: Enterprise applications (like Salesforce, ADP, or Workday) restrict deep developer credential pages behind login walls. The Research Agent cannot bypass these, generating lower confidence metrics that route them to the human review queue.
 2.  **JavaScript-Heavy SPAs**: Developer documentation sites that do not render static HTML structures fail requests checks, requiring CPU-heavy Playwright headless browser rendering.
