@@ -15,11 +15,12 @@ This platform automates that assessment. Given a list of 100 SaaS applications, 
 ## 2. Technology Stack
 
 *   **Core**: Python 3.13
-*   **Data Models**: Pydantic v2
-*   **Agent LLM**: OpenAI API (using Structured Outputs parsing on `gpt-4o-mini`)
-*   **Scraping & Discovery**: DuckDuckGo Search API (`duckduckgo_search`), `requests` (with urllib3 adapters), `BeautifulSoup4`, and `Playwright` headless browser rendering.
-*   **Analytics**: `pandas`
-*   **HTML Dashboard Rendering**: Jinja2 templating, Chart.js (static CDN charts), and Vanilla CSS (Glassmorphism layout).
+*   **Data Models & Types**: Pydantic v2
+*   **Agent LLM / Reasoning**: OpenAI API (Structured Outputs parsing on `gpt-4o-mini`)
+*   **SaaS Discovery & Scrape**: **Composio Python SDK (`composio-openai`)** utilizing Tavily Search toolkits (with native fallback to DuckDuckGo search), requests (with urllib3 session adapters), BeautifulSoup4, and Playwright headless browser rendering.
+*   **Environment Configuration**: `python-dotenv` (for git-safe local credentials mapping)
+*   **Analytics & Data Frames**: `pandas`
+*   **HTML Dashboard Compiler**: Jinja2 templating, Chart.js (CDN visualizations), and Vanilla CSS (Glassmorphic layout).
 
 ---
 
