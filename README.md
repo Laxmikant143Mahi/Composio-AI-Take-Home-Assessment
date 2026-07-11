@@ -2,23 +2,6 @@
 
 An AI-powered SaaS Research and Verification Platform that automates the analysis of developer portals across 100 applications. It assesses API types, authentication schemes, developer onboarding accessibility, and toolkit feasibility for Composio, providing a verified dynamic dashboard to guide integration roadmaps.
 
-
----
-
-## ⚡ Quick Start: Run in 30 Seconds
-
-Generate the dynamic executive report instantly (Development Mode, $0.00 API cost):
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
-
-# 2. Run the pipeline
-python run.py
-
-# 3. View the dashboard
-# Open index.html at root (or output/report.html) in your browser!
-```
-
 ---
 
 ## 1. Project Overview
@@ -29,7 +12,59 @@ This platform automates that assessment. Given a list of 100 SaaS applications, 
 
 ---
 
-## 2. High-Level Design (HLD)
+## 2. Technology Stack
+
+*   **Core**: Python 3.13
+*   **Data Models**: Pydantic v2
+*   **Agent LLM**: OpenAI API (using Structured Outputs parsing on `gpt-4o-mini`)
+*   **Scraping & Discovery**: DuckDuckGo Search API (`duckduckgo_search`), `requests` (with urllib3 adapters), `BeautifulSoup4`, and `Playwright` headless browser rendering.
+*   **Analytics**: `pandas`
+*   **HTML Dashboard Rendering**: Jinja2 templating, Chart.js (static CDN charts), and Vanilla CSS (Glassmorphism layout).
+
+---
+
+## 3. Installation & Setup
+
+1.  Clone the repository and navigate to the project directory:
+    ```bash
+    cd composio
+    ```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Configure environment variables:
+    *   To run **live AI-First web research crawls**:
+        ```bash
+        # Command Prompt (Windows)
+        set OPENAI_API_KEY=your-api-key-here
+        
+        # PowerShell (Windows)
+        $env:OPENAI_API_KEY="your-api-key-here"
+        ```
+    *   To run **Development Mode (Cached)**:
+        Simply omit setting `OPENAI_API_KEY`. The platform's agents automatically load pre-cached results from `data/research_cache.json` (falling back to manual ground-truth mappings if cache misses occur), bypassing live search engines and HTTP network requests to run instantly without requiring API keys.
+
+---
+
+## 4. How to Run
+
+1.  **Seed Datasets**:
+    The input dataset of 100 applications (`data/saas_input.csv`) and verification ground truths (`data/manual_verification.json`) are already pre-seeded and packaged directly in this repository. No extra setup is required to prepare the dataset.
+2.  **Execute Platform Pipeline**:
+    ```bash
+    # Run the full pipeline for all 100 applications
+    python run.py
+    ```
+    *   **Advanced CLI Flags**:
+        *   `--nocache`: Bypass the cache database (`data/research_cache.json`) and force live crawlers to query web search indices.
+        *   `--limit N`: Processes only the first `N` applications in the input CSV list. *Recommended for checking live LLM crawls on 3-5 applications without spending significant API credits.*
+3.  **View Output Report**:
+    Open `index.html` at the project's root folder (or `output/report.html`) directly in any web browser to view the interactive dashboard.
+
+---
+
+## 5. High-Level Design (HLD)
 
 The platform is constructed as a decoupled, local-first hybrid data pipeline that automates the ingestion, crawling, analysis, and validation of developer documentation. 
 
@@ -58,7 +93,7 @@ graph TD
 
 ---
 
-## 3. Low-Level Design (LLD)
+## 6. Low-Level Design (LLD)
 
 The platform splits the business logic into distinct layers to maintain strict modularity:
 
@@ -118,7 +153,7 @@ classDiagram
 
 ---
 
-## 4. How It Works (Workflow)
+## 7. How It Works (Workflow Diagram)
 
 ```mermaid
 sequenceDiagram
@@ -129,7 +164,7 @@ sequenceDiagram
     participant OpenAI as OpenAI API (gpt-4o-mini)
     participant VerAgent as VerificationAgent
     participant Cache as data/research_cache.json
-
+ 
     CLI->>ResAgent: Research SaaS App
     ResAgent->>Cache: Lookup normalized app name
     alt Cache Hit
@@ -154,7 +189,7 @@ sequenceDiagram
 
 ---
 
-## 5. Verification Strategy & Confidence Score
+## 8. Verification Strategy & Confidence Score
 
 To ensure data reliability, the Verification Agent calculates a deterministic confidence score:
 
@@ -171,58 +206,6 @@ $$\text{Confidence Score} = (0.20 \times \text{Doc URL Valid}) + (0.20 \times \t
 *Note: These weights are heuristic and were chosen to prioritize evidence-backed verification over simple URL availability. They can be calibrated using historical validation data in a production environment.*
 
 If the final confidence score falls below **`0.75`**, `needs_human_review` is set to `True`, routing the record to the **Human Review Queue**.
-
----
-
-## 6. Technology Stack
-
-*   **Core**: Python 3.13
-*   **Data Models**: Pydantic v2
-*   **Agent LLM**: OpenAI API (using Structured Outputs parsing on `gpt-4o-mini`)
-*   **Scraping & Discovery**: DuckDuckGo Search API (`duckduckgo_search`), `requests` (with urllib3 adapters), `BeautifulSoup4`, and `Playwright` headless browser rendering.
-*   **Analytics**: `pandas`
-*   **HTML Dashboard Rendering**: Jinja2 templating, Chart.js (static CDN charts), and Vanilla CSS (Glassmorphism layout).
-
----
-
-## 7. Installation & Setup
-
-1.  Clone the repository and navigate to the project directory:
-    ```bash
-    cd composio
-    ```
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Configure environment variables:
-    *   To run **live AI-First web research crawls**:
-        ```bash
-        # Command Prompt (Windows)
-        set OPENAI_API_KEY=your-api-key-here
-        
-        # PowerShell (Windows)
-        $env:OPENAI_API_KEY="your-api-key-here"
-        ```
-    *   To run **Development Mode (Cached)**:
-        Simply omit setting `OPENAI_API_KEY`. The platform's agents automatically load pre-cached results from `data/research_cache.json` (falling back to manual ground-truth mappings if cache misses occur), bypassing live search engines and HTTP network requests to run instantly without requiring API keys.
-
----
-
-## 8. How to Run
-
-1.  **Seed Datasets**:
-    The input dataset of 100 applications (`data/saas_input.csv`) and verification ground truths (`data/manual_verification.json`) are already pre-seeded and packaged directly in this repository. No extra setup is required to prepare the dataset.
-2.  **Execute Platform Pipeline**:
-    ```bash
-    # Run the full pipeline for all 100 applications
-    python run.py
-    ```
-    *   **Advanced CLI Flags**:
-        *   `--nocache`: Bypass the cache database (`data/research_cache.json`) and force live crawlers to query web search indices.
-        *   `--limit N`: Processes only the first `N` applications in the input CSV list. *Recommended for checking live LLM crawls on 3-5 applications without spending significant API credits.*
-3.  **View Output Report**:
-    Open `output/report.html` directly in any web browser to view the interactive dashboard.
 
 ---
 
