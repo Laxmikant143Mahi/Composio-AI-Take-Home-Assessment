@@ -21,11 +21,11 @@ The system processes applications through a sequential flow, utilizing a local c
 
 ```mermaid
 graph TD
-    A[data/saas_input.csv] -->|1. Ingestion| B[run.py Pipeline CLI]
-    B -->|2. Delegate Research| C[Research Agent]
-    C -->|3a. Check Cache| D[(data/research_cache.json)]
-    C -->|3b. Live Search Miss| E[Composio SDK / Tavily]
-    C -->|3c. Parse Page text| F[OpenAI API gpt-4o-mini]
+    A["data/saas_input.csv"] -->|1. Ingestion| B["run.py Pipeline CLI"]
+    B -->|2. Delegate Research| C["Research Agent"]
+    C -->|3a. Check Cache| D[("data/research_cache.json")]
+    C -->|3b. Live Search Miss| E["Composio SDK / Tavily"]
+    C -->|3c. Parse Page text| F["OpenAI API gpt-4o-mini"]
     
     B -->|4. Delegate Verification| G[Verification Agent]
     G -->|5a. URL Reachability check| H[Web Scraper Pings]
@@ -231,14 +231,14 @@ To make the platform cost-efficient, fast, and testable without losing live craw
 
 ```mermaid
 graph TD
-    A[Live Mode (Production)] -->|1. Live Web Crawl| B[Research Agent]
-    B -->|2. Structured Extraction| C[OpenAI API]
-    C -->|3. Save to Cache| D[(data/research_cache.json)]
+    A["Live Mode (Production)"] -->|1. Live Web Crawl| B["Research Agent"]
+    B -->|2. Structured Extraction| C["OpenAI API"]
+    C -->|3. Save to Cache| D[("data/research_cache.json")]
     
-    E[Development Mode (Cached)] -->|1. Fast Load| D
-    D -->|4. Load Verified Profile| F[Verification Agent]
-    F -->|5. Dynamic Calculations| G[Analytics Engine]
-    G -->|6. Compile jinja2 templates| H[HTML5 Dashboard]
+    E["Development Mode (Cached)"] -->|1. Fast Load| D
+    D -->|4. Load Verified Profile| F["Verification Agent"]
+    F -->|5. Dynamic Calculations| G["Analytics Engine"]
+    G -->|6. Compile jinja2 templates| H["HTML5 Dashboard"]
 ```
 
 **Key Execution Rule:**
