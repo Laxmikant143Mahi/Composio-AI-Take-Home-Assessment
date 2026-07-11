@@ -138,7 +138,7 @@ def main():
         
         # Automatically copy the generated report to index.html at root for easy hosting/deployment
         import shutil
-        shutil.copy(report_path, BASE_DIR / "index.html")
+        shutil.copy(report_path, src_path / "index.html")
         logger.info("Copied generated report to root index.html for static hosting deployment.")
         
         logger.info(f"Pipeline executed successfully. View report at: {report_path}")
