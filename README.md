@@ -6,6 +6,9 @@ An AI-powered SaaS Research and Verification Platform that automates the analysi
 
 ## 1. Project Overview
 
+Live Link : [Click here](https://composio-ai-take-home-assessment-five.vercel.app/)
+
+
 Composio develops tools and integration frameworks that allow AI agents to interact with third-party software. Identifying which applications are ready to integrate versus which are gated or require custom partnerships is a core product operations challenge. 
 
 This platform automates that assessment. Given a list of 100 SaaS applications, it discovers documentation links, scrapes relevant developer pages, uses LLMs for structured metadata extraction, verifies findings against live network pings, and cross-checks content using a secondary LLM verification model. It outputs a premium static HTML dashboard presenting aggregated analytics, qualitative business insights, dynamic verification accuracy, and a searchable matrix of findings.
