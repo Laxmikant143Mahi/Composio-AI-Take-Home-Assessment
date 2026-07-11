@@ -219,6 +219,27 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 ## 10. Key Limitations & Human Intervention boundaries
 
-1.  **Portals Behind Logins**: Enterprise applications (like Salesforce, ADP, or Workday) restrict deep developer credential pages behind login walls. The Research Agent cannot bypass these, generating lower confidence metrics that route them to the human review queue.
+1.  **Portals Behind Logins**: Enterprise applications (like Salesforce, ADP, or Workday) restrict developer credential pages behind login walls. The Research Agent cannot bypass these, generating lower confidence metrics that route them to the human review queue.
 2.  **JavaScript-Heavy SPAs**: Developer documentation sites that do not render static HTML structures fail requests checks, requiring CPU-heavy Playwright headless browser rendering.
 3.  **Cloudflare/WAF Blocks**: Frequent search and scraping requests can trigger bot-protection blocks. While handled using retry adapters and exponential backoffs, a production environment requires proxy rotation pools.
+
+---
+
+## 11. Platform Execution Logic & Cache Rationale
+
+To make the platform cost-efficient, fast, and testable without losing live crawler integrity, the system utilizes a centralized caching strategy. The flowchart below illustrates how cached profiles are reused across modes:
+
+```mermaid
+graph TD
+    A[Live Mode (Production)] -->|1. Live Web Crawl| B[Research Agent]
+    B -->|2. Structured Extraction| C[OpenAI API]
+    C -->|3. Save to Cache| D[(data/research_cache.json)]
+    
+    E[Development Mode (Cached)] -->|1. Fast Load| D
+    D -->|4. Load Verified Profile| F[Verification Agent]
+    F -->|5. Dynamic Calculations| G[Analytics Engine]
+    G -->|6. Compile jinja2 templates| H[HTML5 Dashboard]
+```
+
+**Key Execution Rule:**
+The same code path is used in both Production and Development modes. The only difference is whether the Research Agent performs fresh web research or loads previously generated research outputs from the local cache. All verification, analytics, confidence scoring, and HTML generation execute identically in both modes.
