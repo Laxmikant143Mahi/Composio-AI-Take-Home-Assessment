@@ -2,6 +2,23 @@
 
 An AI-powered SaaS Research and Verification Platform that automates the analysis of developer portals across 100 applications. It assesses API types, authentication schemes, developer onboarding accessibility, and toolkit feasibility for Composio, providing a verified dynamic dashboard to guide integration roadmaps.
 
+
+---
+
+## ⚡ Quick Start: Run in 30 Seconds
+
+Generate the dynamic executive report instantly (Development Mode, $0.00 API cost):
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run the pipeline
+python run.py
+
+# 3. View the dashboard
+# Open index.html at root (or output/report.html) in your browser!
+```
+
 ---
 
 ## 1. Project Overview
