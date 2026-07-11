@@ -172,7 +172,7 @@ If the final confidence score falls below **`0.75`**, `needs_human_review` is se
 
 1.  Clone the repository and navigate to the project directory:
     ```bash
-    cd capsicono
+    cd composio
     ```
 2.  Install dependencies:
     ```bash
